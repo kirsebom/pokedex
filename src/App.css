@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.pokedex {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 18px;
+	max-width: 500px;
+	max-height: 700px;
+	margin: 0 auto;
+	background: #bbe6e4;
+	padding: 18px;
+	padding-bottom: 100px;
+	position: relative;
+}
+select {
+	width: 100%;
+	height: 50px;
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid black;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 18px;
+	box-shadow: 0 4px 12px black;
+	border-radius: 5px;
+}
+img {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background: rgba(187, 232, 228, 0.28);
+}
+h2 {
+	text-transform: capitalize;
+	font-size: 30px;
+	margin: 18px 0;
+}
+
+p {
+	margin: 0 70px;
+	text-align: center;
+	line-height: 1.5;
+}
+.btn-container {
+	position: absolute;
+	bottom: 18px;
+	width: 90%;
+	display: flex;
+	gap: 10px;
+}
+button {
+	flex-grow: 1;
+	background: rgb(125, 112, 186);
+	box-shadow: 0 5px 0 rgb(103, 92, 152);
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+}
+button:active {
+	box-shadow: none;
+	transform: translateY(5px);
+}
+button:disabled {
+	background: rgba(125, 112, 186, 0.5);
+	box-shadow: 0 5px 0 rgba(125, 112, 186, 0.5);
+	cursor: not-allowed;
+}
+button:disabled:active {
+	transform: translateY(0);
+}
+@media (max-width: 450px) {
+	p {
+		margin: 0 10px;
+	}
+}
